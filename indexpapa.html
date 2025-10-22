@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA MUSEO XOSE MANUEL PAZOS VARELA</title>
+    <link rel="icon" href="images/logocasamuseo.webp" type="image/webp">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts.js"></script>   
+</head>
+<body>
+<header>
+    <img src="images/logocasamuseo.webp" alt="Logo" width="50">
+    <h1>CASA MUSEO</h1>
+    <h2>XOSE MANUEL PAZOS VARELA</h2>
+</header>
+<nav>
+    <!-- Barra de búsqueda -->
+    <label for="busqueda">Buscar:</label>
+    
+    <input type="text" id="busqueda" placeholder="Buscar elemento...">
+    <button class="btn" onclick="buscarElemento()">Buscar Elemento</button>
+    <!-- Resultados de la búsqueda -->
+    <div id="lista"></div>
+    <ul>
+        <li><a href="#vida">VIDA</a></li>
+        <li><a href="#obra">OBRA</a></li>
+        <li><a href="#politica">POLÍTICA</a></li>
+        <li><a href="#fotografias">FOTOS</a></li>
+        <li><a href="#actividades">ACTIVIDADES</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+</nav>
+<main>
+     <div id="vida" class="section"></div>
+        <h3>VIDA</h3>
+        <div> 
+            <img src="images/fotovida.jpg" alt="Foto vida" height="250" width="300">
+            <img src="images/cementerio.jpg" alt="Foto cementerio" height="250" width="300">
+
+        </div>
+    </div>
+    <div id="obra" class="section"></div>
+        <h3>OBRA</h3>
+        <div>
+           <ol class="lista">
+            <img src="images/auditorio.jpg" alt="Foto auditorio" height="200" width="300">
+            <img src="images/fotoretrato.jpg" alt="Foto retrato" height="200" width="200">
+            <ol class="lista">
+                <li>AUTOR DE TEATRO</li>
+                <li>MARÍA SOLINHA</li>
+                <li>ADAPTACIÓNS, DRAMATURXIAS, VERSIÓNS</li>
+                <li>TRADUCIÓNS TEATRAIS</li>
+                <li>OUTROS TRABALLOS E PUBLICACIÓNS</li>
+                <li>RELATORIOS, ARTIGOS, ENTREVISTAS</li>
+                <li>COLABORACIÓNS CON TEATRO DE NINGURES</li>
+                <li>OBRA PUBLICADA NA REVISTA GALEGA DE TEATRO</li>
+                <li>ARTIGOS CULTURAIS</li>
+                <li>PREMIOS E MENCIÓNS</li>
+            </ol>
+        </div>
+    </div>
+    <div id="politica" class="section"></div>
+        <h3>POLÍTICA</h3>
+        <ol class="lista">
+            
+            <li>ALCALDÍA</li>
+            <li>XESTIÓN DO COVID</li>
+            <li>CONCELLEIRO DE CULTURA</li>
+            <li>ALTERNATIVA CANGUESA DE ESQUERDAS</li>
+            <li>ARTIGOS DE OPINIÓN</li>
+        </ol>    
+    <div>
+        <img src="images/fotopolitica.jpg" alt="Foto política" height="350" width="300">
+        <img src="images/tomaposesion.JPG" alt="Foto toma posesión" height="350" width="475">  
+    </div>
+            
+        
+    <div id="actividades" class="section"></div>
+        <h3>ACTIVIDADES</h3>
+        <ol class="lista">
+            <li>HISTORIA DUNHA REFORMA</li>
+            <li>DISTRIBUCIÓN DE ESPAZOS</li>
+            <li>OBRA ARTÍSTICA</li>
+            <li>INAGURACIÓN</li>
+
+        </ol>
+    </div>
+    <div id="fotografias" class="section"></div>
+        <h3>FOTOS</h3>
+        <ol class="lista">
+            <li>A DEFENSA DA VILA</li>
+            <li>ASPAMSIM</li>
+            <li>CONCELLO</li>
+            <li>COVID</li>
+            <li>CULTURA</li>   
+            <li>ESCOLA SAN ROQUE</li> 
+            <li>FAMILIA</li>
+            <li>PERSOAIS</li>
+            <li>TEATRO</li>
+            <li>POLÍTICA</li>    
+            <li>XOSÉ MANUEL FOTÓGRAFO</li>
+        </ol>
+    </div>
+    <div id="contacto" class="section"></div>
+        <h3>CONTACTO
+            <div class="gallery">
+                <img src="images/casafuera.jpg" alt="Foto casa por fuera">
+                <img src="images/fotofinca.jpg" alt="Foto finca">
+            </div>    
+        </h3>
+        <ol class="lista">
+            <li>ESTATUTOS ASOCIACIÓN CULTURAL</li>
+            <li>INTEGRANTES DIRECTIVA</li>
+            <li>DIRECCIÓN CASA MUSEO</li>
+            <li>TELÉFONO</li>
+            <li>CORREO ELECTRÓNICO</li>
+            <li>PÁGINA WEB</li>
+            <li>GALERÍA FOTOGRÁFICA</li>
+        </ol>
+        <p>Para más información, rellene el siguiente formulario:</p>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <a href="https://wa.me/34661053165" class="whatsapp-float" target="_blank">
+        <img src="images/logowasap.jpeg" alt="WhatsApp">
+    </a>
+    <p>Ubicación</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.426677624632!2d-8.769293899999948!3d42.27804150000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6140bd073d6d%3A0xe67d45d1b53d2317!2sLugar%20Boubeta%2C%2016%2C%2036947%2C%20Pontevedra!5e1!3m2!1ses!2ses!4v1741169076580!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>&copy; 2025 Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
+
+

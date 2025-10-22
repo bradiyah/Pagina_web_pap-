@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA MUSEO XOSE MANUEL PAZOS VARELA</title>
+    
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background: url('mural 2º.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        /* Menú de navegación con cajitas */
+        nav {
+            background: #003366;
+            padding: 30px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 15;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(219, 227, 233);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            background: #db2c2c;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul li a:hover {
+            background: #007bff;
+            transform: scale(1.1);
+        }
+
+        /* Contenido */
+        main {
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CASA MUSEO</h1>
+    <h2>XOSE MANUEL PAZOS VARELA</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="#biografia">Biografía</a></li>
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#fotografias">Fotografías</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>Xosé Manuel Pazos Varela, nado en Coiro (Cangas) o 19 de marzo de 1957 e finado en Vigo o 25 de xaneiro de 2021...</p>
+        <div class="gallery">
+            <img src="foto casa fuera.jpg" alt="Foto casa por fuera">
+            <img src="foto finca.jpg" alt="Foto finca">
+            <img src="foto mural papa.jpg" alt="Foto mural">
+        </div>
+    </section>
+    <section id="obras">
+        <h2>Obras</h2>
+        <p>Listado de sus libros, discursos y obras teatrales.</p>
+    </section>
+    <section id="actividades">
+        <h2>Actividades y Legado</h2>
+        <p>Impacto en la política y la literatura.</p>
+    </section>
+    <section id="fotografias">
+        <h2>Fotografías</h2>
+        <p>Aquí aparecerán las diferentes fotografías de Xosé Manuel Pazos Varela y su casa museo.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <a href="https://wa.me/34661053165" class="whatsapp-float" target="_blank">
+        <img src="logowasap2.png" alt="WhatsApp">
+    </a>
+    <p>Ubicación</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2671.426677624632!2d-8.769293899999948!3d42.27804150000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6140bd073d6d%3A0xe67d45d1b53d2317!2sLugar%20Boubeta%2C%2016%2C%2036947%2C%20Pontevedra!5e1!3m2!1ses!2ses!4v1741169076580!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>&copy; 2025 Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
+
