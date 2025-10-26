@@ -5,26 +5,100 @@
     padding: 0;
     text-align: center;
     transition: background 0.3s, color 0.3s;
-    justify-content: flex;;
+    justify-content: flex;
+    overflow-x: hidden;
+}
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  overflow-x: hidden; /* evita scroll horizontal */
+}
 
-.btn {
-      padding: 0.5rem 1rem;
-      margin-bottom: 1rem;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 0.3rem;
-      cursor: pointer;
-    }
-    .card {
-      background: white;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      margin-bottom: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+/* ---------- NAV LATERAL DERECHA ---------- */
+.lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transform: translateX(100%); /* oculta inicialmente */
+  transition: transform 0.35s ease;
+  z-index: 1000;
+}
+
+/* ---------- MOSTRAR MENÚ CUANDO ESTÁ TARGET ---------- */
+#nav:target {
+  transform: translateX(0); /* visible */
+}
+
+/* ---------- ENLACES DEL MENÚ ---------- */
+.lateral a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #444;
+  transition: background 0.3s;
+}
+
+.lateral a:hover {
+  background: #1abc9c;
+}
+
+/* ---------- BOTÓN REABRIR ---------- */
+.reabrir {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  color: #222;
+  text-decoration: none;
+  z-index: 1100;
+  transition: opacity 0.3s ease;
+}
+
+/* ---------- ELIMINAR BORDES O RESPLANDORES AZULES ---------- */
+.reabrir:focus,
+.lateral a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ---------- OCULTAR BOTÓN CUANDO EL MENÚ ESTÁ ABIERTO ---------- */
+#nav:target ~ .reabrir {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- CERRAR MENÚ AL IR A UNA SECCIÓN ---------- */
+#s1:target ~ .lateral,
+#s2:target ~ .lateral,
+#s3:target ~ .lateral,
+#s4:target ~ .lateral,
+#s5:target ~ .lateral,
+#s6:target ~ .lateral,
+#s7:target ~ .lateral,
+#cierra:target ~ .lateral {
+  transform: translateX(100%);
+}
+
+/* ---------- PEQUEÑO ESTILO A LAS SECCIONES ---------- */
+section {
+  padding: 2rem;
+  min-height: 100vh;
+}
 /* Estilos del encabezado */
 header {
     background-image: url("C:/Users/Usuario/Desktop/Pagina_web_pap-/images/Foto_mural.jpg");
@@ -60,10 +134,12 @@ header h1 {
     left: -32px; /* Ajusta la distancia desde la izquierda */
     background-image: none;
     font-family: cooper black;
+    margin-bottom: 0.5em;
   
 }
 header h1, h2{
-    line-height: 3; /* Ajusta el espacio entre líneas */
+    line-height: 3;
+     /* Ajusta el espacio entre líneas */
 }
 
 header h2 {
@@ -73,18 +149,18 @@ header h2 {
     color: rgb(27, 166, 241);
     margin-left: 3%;
     position: left;
-    top: 40px; /* Ajusta la distancia desde la parte superior */
-    line-height: 0.2; /* Ajusta el espacio entre líneas */
+    top: 100px; /* Ajusta la distancia desde la parte superior */
+    line-height: 0.4; /* Ajusta el espacio entre líneas */
 }
 
 .logo-museo {
-    width: 150px;
-    height: 700px;
-    margin-left: 5%;
+    width: 250px;
+    height: 600px;
+    margin-left: 2%;
     text-align: left;
-    position: center-left;
+    position: left;
     top: 40px;
-    left: 20px;
+    left: 15px;
 }
 
 
@@ -116,6 +192,9 @@ h2 {
     margin-right: 65%;
     margin-bottom: 15px;
 }
+
+
+
 
 
 
