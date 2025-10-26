@@ -63,31 +63,28 @@ header h1 {
 }
 
 header h2 {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: Berlin-sans FB;
     text-align: left;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: rgb(56, 113, 192);
     margin-left: 3%;
-    position: relative;
+    position: left;
     top: 40px; /* Ajusta la distancia desde la parte superior */
-
+    line-height: 0.5; /* Ajusta el espacio entre líneas */
 }
 
 .logo-museo {
-  width: 120px;         /* Ajuste de tamaño */
-  height: auto;
-  margin-top: 10px;
-  border-radius: 50%;   /* Para que se vea circular */
-  border: 3px solid white; /* Marco blanco */
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 150px;
+    height: auto;
+    margin-left: 6%;
+    text-align: left;
+    position: center-left;
+    top: 40px;
+    left: 20px;
 }
 
 
 
-
-.container {
-    padding: 50px;
-}
 
 /* Contenido */
 main {
