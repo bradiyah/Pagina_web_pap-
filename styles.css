@@ -60,23 +60,27 @@ header h1 {
     left: -32px; /* Ajusta la distancia desde la izquierda */
     background-image: none;
     font-family: cooper black;
+  
+}
+header h1, h2{
+    line-height: 3; /* Ajusta el espacio entre líneas */
 }
 
 header h2 {
     font-family: Berlin-sans FB;
     text-align: left;
     font-size: 2rem;
-    color: rgb(56, 113, 192);
+    color: rgb(27, 166, 241);
     margin-left: 3%;
     position: left;
     top: 40px; /* Ajusta la distancia desde la parte superior */
-    line-height: 0.5; /* Ajusta el espacio entre líneas */
+    line-height: 0.2; /* Ajusta el espacio entre líneas */
 }
 
 .logo-museo {
     width: 150px;
-    height: auto;
-    margin-left: 6%;
+    height: 700px;
+    margin-left: 5%;
     text-align: left;
     position: center-left;
     top: 40px;
