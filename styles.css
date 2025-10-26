@@ -50,23 +50,39 @@ header img{
 
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: left;
-    margin-left: 12%;
-    color: white;
+    margin-left: 3%;
+    color: rgb(222, 36, 67);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    left: 20px; /* Ajusta la distancia desde la izquierda */
+    position: relative;
+    top: 35px; /* Ajusta la distancia desde la parte superior */
+    left: -32px; /* Ajusta la distancia desde la izquierda */
     background-image: none;
-    font-family: ;
+    font-family: cooper black;
 }
 
 header h2 {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    font-size: 1.75rem;
+    color: rgb(56, 113, 192);
+    margin-left: 3%;
+    position: relative;
+    top: 40px; /* Ajusta la distancia desde la parte superior */
+
 }
+
+.logo-museo {
+  width: 120px;         /* Ajuste de tamaño */
+  height: auto;
+  margin-top: 10px;
+  border-radius: 50%;   /* Para que se vea circular */
+  border: 3px solid white; /* Marco blanco */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
 
 
 .container {
@@ -100,12 +116,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-div, ol {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
 
 
 .gallery img {
