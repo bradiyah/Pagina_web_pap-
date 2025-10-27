@@ -22,77 +22,48 @@ html, body {
   overflow-x: hidden; /* evita scroll horizontal */
 }
 
-/* ---------- NAV LATERAL DERECHA ---------- */
+/* ---------- MENU LATERAL DERECHO (FIJO) ---------- */
 .lateral {
   position: fixed;
   top: 0;
   right: 0;
-  width: 220px;
+  width: 240px;
   height: 100vh;
-  background: #222;
-  color: #fff;
+  background: #f4f4f4;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  transform: translateX(100%); /* oculta inicialmente */
-  transition: transform 0.35s ease;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 2rem;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.4);
   z-index: 1000;
 }
 
-/* ---------- MOSTRAR MENÚ CUANDO ESTÁ TARGET ---------- */
-#nav:target {
-  transform: translateX(0); /* visible */
-}
-
-/* ---------- ENLACES DEL MENÚ ---------- */
+/* ---------- OPCIONES EN "CASILLAS" ---------- */
 .lateral a {
-  color: #fff;
+  color: #e0dbac;
   text-decoration: none;
-  padding: 0.7rem 0;
-  border-bottom: 1px solid #444;
-  transition: background 0.3s;
+  background: #2aafdc;              /* fondo tipo casilla */
+  margin-bottom: 15px;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;            /* bordes redondeados */
+  border: 1px solid #444;        /* define cada casilla */
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1em ;
+  letter-spacing: 1px;
+
 }
 
+/* Efecto hover */
 .lateral a:hover {
   background: #1abc9c;
+  transform: translateY(-2px);
 }
 
-/* ---------- BOTÓN REABRIR ---------- */
-.reabrir {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.8rem;
-  color: #222;
-  text-decoration: none;
-  z-index: 1100;
-  transition: opacity 0.3s ease;
-}
 
-/* ---------- ELIMINAR BORDES O RESPLANDORES AZULES ---------- */
-.reabrir:focus,
-.lateral a:focus {
-  outline: none;
-  box-shadow: none;
-}
 
-/* ---------- OCULTAR BOTÓN CUANDO EL MENÚ ESTÁ ABIERTO ---------- */
-#nav:target ~ .reabrir {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* ---------- CERRAR MENÚ AL IR A UNA SECCIÓN ---------- */
-#s1:target ~ .lateral,
-#s2:target ~ .lateral,
-#s3:target ~ .lateral,
-#s4:target ~ .lateral,
-#s5:target ~ .lateral,
-#s6:target ~ .lateral,
-#s7:target ~ .lateral,
-#cierra:target ~ .lateral {
-  transform: translateX(100%);
-}
 
 /* ---------- PEQUEÑO ESTILO A LAS SECCIONES ---------- */
 section {
@@ -103,7 +74,7 @@ section {
 header {
     background-image: url("C:/Users/Usuario/Desktop/Pagina_web_pap-/images/Foto_mural.jpg");
     background-position: center;
-    height: 450px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -138,7 +109,7 @@ header h1 {
   
 }
 header h1, h2{
-    line-height: 3;
+    line-height: 4;
      /* Ajusta el espacio entre líneas */
 }
 
@@ -146,24 +117,28 @@ header h2 {
     font-family: Berlin-sans FB;
     text-align: left;
     font-size: 2rem;
-    color: rgb(27, 166, 241);
+    color:  #2aafdc;
     margin-left: 3%;
     position: left;
-    top: 100px; /* Ajusta la distancia desde la parte superior */
-    line-height: 0.4; /* Ajusta el espacio entre líneas */
+    top: 150px; /* Ajusta la distancia desde la parte superior */
+    line-height: 0.6; /* Ajusta el espacio entre líneas */
 }
 
 .logo-museo {
     width: 250px;
-    height: 600px;
+    height: 250px;
     margin-left: 2%;
     text-align: left;
     position: left;
-    top: 40px;
+    top: 60px;
     left: 15px;
 }
 
-
+/* ---------- CONTENIDO PRINCIPAL AJUSTADO ---------- */
+main {
+  margin-right: 260px; /* espacio para el menú fijo */
+  padding: 2rem;
+}
 
 
 /* Contenido */
