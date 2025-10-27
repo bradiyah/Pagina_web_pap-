@@ -41,7 +41,7 @@ html, body {
 
 /* ---------- OPCIONES EN "CASILLAS" ---------- */
 .lateral a {
-  color: #e0dbac;
+  color: #d1c663;
   text-decoration: none;
   background: #2aafdc;              /* fondo tipo casilla */
   margin-bottom: 15px;
@@ -51,8 +51,9 @@ html, body {
   transition: background 0.3s, transform 0.2s;
   text-align: center;
   font-weight: 500;
-  font-size: 1.1em ;
+  font-size: 1em ;
   letter-spacing: 1px;
+  font-family: 'Arial Black', Gadget, sans-serif;
 
 }
 
