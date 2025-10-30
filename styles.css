@@ -73,23 +73,23 @@ section {
 }
 /* Estilos del encabezado */
 header {
-    background-image: url("C:/Users/Usuario/Desktop/Pagina_web_pap-/images/Foto_mural.jpg");
+    background-image: url("images/fotosinmodificarmural.jpg");
     background-position: center;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     
 }
 header img{
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
     border-radius: 40%;
     margin-left: 5%;
     margin-top: 10px;
     /* Espaciado visual */
   margin: 40px auto; /* Deja margen arriba/abajo y centra horizontalmente */
-  width: 90%; /* Que no ocupe todo el ancho */
+  width: 70%; /* Que no ocupe todo el ancho */
   border-radius: 15px; /* Bordes redondeados (opcional) */
   overflow: hidden; /* Para mantener forma del contenedor */
 }
