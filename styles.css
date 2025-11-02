@@ -1,11 +1,11 @@
   /* Estilos generales */
   body {
+  
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     transition: background 0.3s, color 0.3s;
-    justify-content: flex;
     overflow-x: hidden;
 }
 /* ---------- RESET ---------- */
@@ -16,15 +16,19 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   font-family: sans-serif;
   background: #f4f4f4;
-  overflow-x: hidden; /* evita scroll horizontal */
+  overflow-x: hidden;  /* evita barra horizontal */
+  overflow-y: auto;    /* ✅ permite barra vertical */
+  scroll-behavior: smooth;
 }
+
+
 
 /* ---------- MENU LATERAL DERECHO (FIJO) ---------- */
 .lateral {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 240px;
@@ -41,7 +45,7 @@ html, body {
 
 /* ---------- OPCIONES EN "CASILLAS" ---------- */
 .lateral a {
-  color: #d1c663;
+  color: #f8f7f1;
   text-decoration: none;
   background: #2aafdc;              /* fondo tipo casilla */
   margin-bottom: 15px;
@@ -79,6 +83,7 @@ header {
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    margin-top: 20px;;
     
 }
 header img{
@@ -86,9 +91,9 @@ header img{
     height: 40%;
     border-radius: 40%;
     margin-left: 5%;
-    margin-top: 10px;
+    margin-top: 20px;
     /* Espaciado visual */
-  margin: 40px auto; /* Deja margen arriba/abajo y centra horizontalmente */
+  margin: 35px auto; /* Deja margen arriba/abajo y centra horizontalmente */
   width: 70%; /* Que no ocupe todo el ancho */
   border-radius: 15px; /* Bordes redondeados (opcional) */
   overflow: hidden; /* Para mantener forma del contenedor */
@@ -148,7 +153,11 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 100vh; /* que crezca según el contenido */
+    overflow-y: visible; /* el scroll lo controla el body */
+    scroll-behavior: smooth;     
 }
+
 
 section {
     width: 80%;
@@ -167,6 +176,10 @@ h2 {
     
     margin-right: 65%;
     margin-bottom: 15px;
+}
+
+#s1{
+  margin-top: -10px;
 }
 
 
